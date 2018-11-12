@@ -2,11 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'hnge-main-header',
-  template: `
-    <p>
-      main-header works!
-    </p>
-  `,
+  templateUrl: './main-header.component.html',
   styles: []
 })
 export class MainHeaderComponent implements OnInit {

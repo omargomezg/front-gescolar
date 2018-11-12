@@ -1,6 +1,7 @@
-import {NgModule} from '@angular/core';
-import {RouterModule, Routes} from '@angular/router';
-import {LayoutComponent} from './layout.component';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { LayoutComponent } from './layout.component';
+import { ApplicationsCardComponent } from './postulation/applications-card/applications-card.component';
 
 const routes: Routes = [
   {
@@ -8,8 +9,9 @@ const routes: Routes = [
     component: LayoutComponent, children: [
       {
         path: '',
-        loadChildren: '../student/student.module#StudentModule'
-      }
+        loadChildren: './dashboard/dashboard.module#DashboardModule'
+      },
+      { path: 'postulation', component: ApplicationsCardComponent }
     ]
   }
 ];
